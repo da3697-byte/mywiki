@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f8f9fa;
+}
+
+header {
+  background: #ffffff;
+  border-bottom: 1px solid #a2a9b1;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  width: 220px;
+  background: #f6f6f6;
+  padding: 15px;
+  border-right: 1px solid #a2a9b1;
+  height: calc(100vh - 50px);
+}
+
+aside a {
+  display: block;
+  color: #0645ad;
+  margin-bottom: 8px;
+  text-decoration: none;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 25px;
+  background: white;
+}
+
+input, button, textarea {
+  padding: 6px;
+  margin-top: 8px;
+}
