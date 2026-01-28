@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyWiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Supabase -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+<header>
+  <h1><a href="#/">MyWiki</a></h1>
+  <nav id="auth-nav"></nav>
+</header>
+
+<div class="container">
+  <aside>
+    <!-- Search Bar -->
+    <input type="text" id="searchBar" placeholder="Search articles..." style="width: 100%; padding: 5px; margin-bottom: 10px;">
+    <div id="searchResults"></div>
+
+    <a href="#/">Main Page</a>
+    <a href="#/wiki/History">History</a>
+    <a href="#/wiki/Science">Science</a>
+    <a href="#/wiki/Technology">Technology</a>
+    <hr>
+    <a href="#/admin">Admin</a>
+  </aside>
+
+  <main id="app"></main>
+</div>
+
+<script src="auth.js"></script>
+<script src="wiki.js"></script>
+<script src="router.js"></script>
+</body>
+</html>
